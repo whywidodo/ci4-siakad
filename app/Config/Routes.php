@@ -33,6 +33,15 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Admin\Home::index');
 $routes->group('admin', function ($routes) {
+	$routes->add('data-guru', 'Admin\Guru::index');
+	$routes->add('tambah-guru', 'Admin\Guru::tambah');
+	$routes->post('simpan-guru', 'Admin\Guru::simpan');
+	$routes->post('detail-guru/(:any)', 'Admin\Guru::detail/$1');
+	$routes->post('hapus-guru/(:any)', 'Admin\Guru::hapus/$1');
+
+	$routes->add('data-siswa', 'Admin\Siswa::index');
+	$routes->add('print-siswa', 'Admin\Siswa::print');
+
 	$routes->add('buttons', 'Admin\Buttons::index');
 	$routes->add('utilities-color', 'Admin\UColor::index');
 	$routes->add('utilities-border', 'Admin\UBorder::index');

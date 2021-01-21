@@ -1,12 +1,12 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gray-900 sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-mobile"></i>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin/">
+        <div class="sidebar-brand-icon">
+            <img src="/siakad/img/logo.png" alt="">
         </div>
-        <div class="sidebar-brand-text mx-3">CI4</div>
+        <div class="sidebar-brand-text mx-3">SIAKAD</div>
     </a>
 
     <!-- Divider -->
@@ -14,7 +14,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="./">
+        <a class="nav-link" href="/admin/">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -24,54 +24,85 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Interface
+        Menu Utama
     </div>
 
-    <!-- Nav Item - Pages Collapse Menu -->
+    <!-- Nav Item Guru-->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Components</span>
+            <i class="fas fa-fw fa-th-large"></i>
+            <span>Master Data</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="/admin/buttons">Buttons</a>
-                <a class="collapse-item" href="/admin/cards">Cards</a>
+                <a class="collapse-item" href="/admin/data-guru">Guru</a>
+                <a class="collapse-item" href="/admin/data-siswa">Siswa</a>
+                <a class="collapse-item" href="/admin/data-guru">Kelas</a>
+                <a class="collapse-item" href="/admin/data-guru">Pelajaran</a>
             </div>
         </div>
     </li>
 
-    <!-- Nav Item - Utilities Collapse Menu -->
+    <!-- Nav Item Siswa -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span>Utilities</span>
+            <i class="fas fa-fw fa-user"></i>
+            <span>Data Siswa</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="/admin/utilities-color">Colors</a>
-                <a class="collapse-item" href="/admin/utilities-border">Borders</a>
-                <a class="collapse-item" href="/admin/utilities-animation">Animations</a>
-                <a class="collapse-item" href="/admin/utilities-other">Other</a>
+                <a class="collapse-item" href="/admin/utilities-color">Daftar Siswa</a>
+                <a class="collapse-item" href="/admin/utilities-border">Tambah Siswa</a>
+                <!-- <a class="collapse-item" href="/admin/utilities-animation">Animations</a> -->
+                <!-- <a class="collapse-item" href="/admin/utilities-other">Other</a> -->
             </div>
         </div>
     </li>
+
+
+    <!-- Nav Item Kelas-->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKelas" aria-expanded="true" aria-controls="collapseKelas">
+            <i class="fas fa-fw fa-th-large"></i>
+            <span>Data Kelas</span>
+        </a>
+        <div id="collapseKelas" class="collapse" aria-labelledby="headingKelas" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="/admin/buttons">Daftar Kelas</a>
+                <a class="collapse-item" href="/admin/cards">Tambah Kelas</a>
+            </div>
+        </div>
+    </li>
+
+
+    <!-- Nav Item Pelajaran-->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePelajaran" aria-expanded="true" aria-controls="collapsePelajaran">
+            <i class="fas fa-fw fa-list-alt"></i>
+            <span>Data Pelajaran</span>
+        </a>
+        <div id="collapsePelajaran" class="collapse" aria-labelledby="headingPelajaran" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="/admin/buttons">Daftar Pelajaran</a>
+                <a class="collapse-item" href="/admin/cards">Tambah Pelajaran</a>
+            </div>
+        </div>
+    </li>
+
 
     <!-- Divider -->
     <hr class="sidebar-divider">
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Addons
+        Menu Pengguna
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Pengaturan</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
@@ -88,34 +119,32 @@
     </li>
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="/admin/charts">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Charts</span></a>
-    </li>
+    </li> -->
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="/admin/tables">
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
-    </li>
+    </li> -->
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
     <!-- Sidebar Toggler (Sidebar) -->
-    <div class="text-center d-none d-md-inline">
+    <!-- <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
-    </div>
+    </div> -->
 
     <!-- Sidebar Message -->
     <div class="sidebar-card">
-        <img class="sidebar-card-illustration mb-2" src="../sb-admin2/img/undraw_rocket.svg" alt="">
-        <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components,
-            and more!</p>
-        <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to
-            Pro!</a>
+        <img class="sidebar-card-illustration mb-2" src="/siakad/img/logo.png" alt="">
+        <p class="text-center mb-2"><strong>SIAKAD</strong> merupakan aplikasi pengelolaan sekolah berbasis web!</p>
+        <a class="btn btn-success btn-sm" href="https://karyane.com">Upgrade to Pro!</a>
     </div>
 
 </ul>

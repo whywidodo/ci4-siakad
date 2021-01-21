@@ -9,15 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CI4 Integrated SBAdmin 2</title>
-
+    <title>SIAKAD - SMP Negeri 1 Bukateja</title>
+    <link rel="icon" type="image/x-icon" href="/siakad/img/favicon.ico" />
     <!-- Custom fonts for this template-->
-    <link href="../sb-admin2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/siakad/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../sb-admin2/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="../sb-admin2/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="/siakad/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/siakad/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
 </head>
 
@@ -51,32 +51,36 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../sb-admin2/vendor/jquery/jquery.min.js"></script>
-    <script src="../sb-admin2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/siakad/vendor/jquery/jquery.min.js"></script>
+    <script src="/siakad/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../sb-admin2/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/siakad/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../sb-admin2/js/sb-admin-2.min.js"></script>
+    <script src="/siakad/js/sb-admin-2.js"></script>
 
     <!-- Page level plugins -->
     <?php if ($data == "Charts" || $data == "") { ?>
-        <script src="../sb-admin2/vendor/chart.js/Chart.min.js"></script>
-    <?php } else if ($data == "Tables") { ?>
-        <script src="../sb-admin2/vendor/datatables/jquery.dataTables.min.js"></script>
-        <script src="../sb-admin2/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="/siakad/vendor/chart.js/Chart.min.js"></script>
+    <?php } else if ($data == "Tables" || $data = "Guru") { ?>
+        <script src="/siakad/vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="/siakad/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <?php } ?>
     <!-- Page level custom scripts -->
     <?php if ($data == "" || $data == "Charts") { ?>
-        <script src="../sb-admin2/js/demo/chart-area-demo.js"></script>
-        <script src="../sb-admin2/js/demo/chart-pie-demo.js"></script>
+        <script src="/siakad/js/demo/chart-area-demo.js"></script>
+        <script src="/siakad/js/demo/chart-pie-demo.js"></script>
     <?php } ?>
     <?php if ($data == "Charts") { ?>
-        <script src="../sb-admin2/js/demo/chart-bar-demo.js"></script>
-    <?php } else if ($data == "Tables") { ?>
-        <script src="../sb-admin2/js/demo/datatables-demo.js"></script>
+        <script src="/siakad/js/demo/chart-bar-demo.js"></script>
+    <?php } else if ($data == "Tables" || $data == "Guru") { ?>
+        <script src="/siakad/js/demo/datatables-demo.js"></script>
     <?php } ?>
+
+    <!-- Sweet Alert -->
+    <script src="/siakad/vendor/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="/siakad/vendor/sweetalert2/custom-alert.js"></script>
 
 </body>
 

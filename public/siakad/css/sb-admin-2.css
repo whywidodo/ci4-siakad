@@ -565,6 +565,12 @@ pre code {
   }
 }
 
+@media (max-width: 768px) {
+  #sidebarToggle {
+    display: none !important;
+  }
+}
+
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
@@ -10423,8 +10429,10 @@ a:focus {
   z-index: 1;
 }
 
-.sidebar .sidebar-brand .sidebar-brand-icon i {
+.sidebar .sidebar-brand .sidebar-brand-icon img {
   font-size: 2rem;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .sidebar .sidebar-brand .sidebar-brand-text {
