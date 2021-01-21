@@ -1,15 +1,7 @@
-# CodeIgniter 4 - Template SBAdmin 2
+# SIAKAD CodeIgniter 4
 
 ## Apakah ini?
-Sebuah website php berbasis framework [CI](https://codeigniter.com) yang telah dimodifikasi agar bisa terintegrasi dengan template [SBAdmin-2](https://startbootstrap.com/theme/sb-admin-2).
-Sehingga dalam struktur tampilan/view tidak perlu membuat dari awal, karena didalam ini sudah terdapat :
-- Layout Header
-- Layout Footer
-- Layout Template
-Sehingga dalam pengembangannya mudah untuk dimodifikasi.
-
-### Hal baru
-Pemanggilan file CSS dan JS hanya yang digunakan pada halaman terkait saja, sehingga tidak membebani proses loading data.
+SIAKAD merupakan sebuah website php berbasis framework [CI](https://codeigniter.com) yang digunakan untuk mengelola sistem akademik sekolah.
 
 
 ## Cara pemasangan & Update.
@@ -40,5 +32,5 @@ Dan pastikan bahwa ekstensi tambahan berikut ini telah aktif pada PHP Anda :
 - xml (secara default sudah aktif)
 
 # Terimakasih
-[Codeigniter-4](https://codeigniter.com) - Framework PHP
-[SBAdmin-2](https://startbootstrap.com/theme/sb-admin-2) - Start Bootstrap
+- [Codeigniter-4](https://codeigniter.com)
+- [SBAdmin-2](https://startbootstrap.com/theme/sb-admin-2)
