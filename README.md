@@ -7,7 +7,7 @@ SIAKAD merupakan sebuah website php berbasis framework [CI](https://codeigniter.
 ## Cara pemasangan & Update.
 Anda bisa melakukan cloning dengan cara.
 Masuk pada terminal yang Anda gunakan kemudian ketikan perintah berikut :
-```gh repo clone whywidodo/ci4```
+```gh repo clone whywidodo/ci4-siakad```
 
 Setelah proses cloning selesai, jalankan update composer dengan mengetikan perintah berikut :
 ```composer update```
